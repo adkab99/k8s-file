@@ -104,3 +104,19 @@ To install the latest minikube stable release on x86-64 Windows using Chocolatey
 
 3. STart intercating with your cluster by running 
 - kubectl get po
+kpg --namespace jjtech-project
+ 1039  k get --all --namespace jjtech-project
+ 1040  kgp -n jjtech-project
+ 1041  k delete po my-app -n jjtech-project
+ 1042  kgp -n jjtech-project
+ 1043  cd ..
+ 1044  k apply -f pod.yml
+ 1045  kgp -n application
+ 1046  kgp -n application --show-labels
+ 1047  k apply -f replication-controller-replicaset.yml
+ 1048  k get --all -n application
+ 1049  kgp -n application
+ 1050  k delete po myapp-replicaset-2996n -n application
+ 1051  kgp -n application
+ 1052  k get replicaset -n application
+ 1053  k delete rs myapp-replicaset -n application
